@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8D33DC4183E8DEE00866FC6 /* DeactivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D33DC3183E8DEE00866FC6 /* DeactivateViewController.m */; };
 		D8D90306183AE9D4005A6562 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D90305183AE9D4005A6562 /* Foundation.framework */; };
 		D8D90308183AE9D4005A6562 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D90307183AE9D4005A6562 /* CoreGraphics.framework */; };
 		D8D9030A183AE9D4005A6562 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D90309183AE9D4005A6562 /* UIKit.framework */; };
@@ -21,6 +22,8 @@
 		D8D90327183AE9D4005A6562 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D90309183AE9D4005A6562 /* UIKit.framework */; };
 		D8D9032F183AE9D4005A6562 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8D9032D183AE9D4005A6562 /* InfoPlist.strings */; };
 		D8D90331183AE9D4005A6562 /* SyftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D90330183AE9D4005A6562 /* SyftTests.m */; };
+		D8D9033C183B078D005A6562 /* JoinUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D9033B183B078D005A6562 /* JoinUsViewController.m */; };
+		D8D90343183C7626005A6562 /* SafetyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D90342183C7626005A6562 /* SafetyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8D33DC2183E8DEE00866FC6 /* DeactivateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeactivateViewController.h; sourceTree = "<group>"; };
+		D8D33DC3183E8DEE00866FC6 /* DeactivateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeactivateViewController.m; sourceTree = "<group>"; };
 		D8D90302183AE9D4005A6562 /* Syft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Syft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D90305183AE9D4005A6562 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8D90307183AE9D4005A6562 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,10 @@
 		D8D9032C183AE9D4005A6562 /* SyftTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SyftTests-Info.plist"; sourceTree = "<group>"; };
 		D8D9032E183AE9D4005A6562 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8D90330183AE9D4005A6562 /* SyftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyftTests.m; sourceTree = "<group>"; };
+		D8D9033A183B078D005A6562 /* JoinUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinUsViewController.h; sourceTree = "<group>"; };
+		D8D9033B183B078D005A6562 /* JoinUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinUsViewController.m; sourceTree = "<group>"; };
+		D8D90341183C7626005A6562 /* SafetyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafetyViewController.h; sourceTree = "<group>"; };
+		D8D90342183C7626005A6562 /* SafetyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafetyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,12 @@
 				D8D90314183AE9D4005A6562 /* WelcomeAppDelegate.h */,
 				D8D90315183AE9D4005A6562 /* WelcomeAppDelegate.m */,
 				D8D90317183AE9D4005A6562 /* Main.storyboard */,
+				D8D33DC2183E8DEE00866FC6 /* DeactivateViewController.h */,
+				D8D33DC3183E8DEE00866FC6 /* DeactivateViewController.m */,
+				D8D9033A183B078D005A6562 /* JoinUsViewController.h */,
+				D8D90341183C7626005A6562 /* SafetyViewController.h */,
+				D8D90342183C7626005A6562 /* SafetyViewController.m */,
+				D8D9033B183B078D005A6562 /* JoinUsViewController.m */,
 				D8D9031A183AE9D4005A6562 /* WelcomeViewController.h */,
 				D8D9031B183AE9D4005A6562 /* WelcomeViewController.m */,
 				D8D9031D183AE9D4005A6562 /* Images.xcassets */,
@@ -250,9 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D33DC4183E8DEE00866FC6 /* DeactivateViewController.m in Sources */,
+				D8D9033C183B078D005A6562 /* JoinUsViewController.m in Sources */,
 				D8D90312183AE9D4005A6562 /* main.m in Sources */,
 				D8D90316183AE9D4005A6562 /* WelcomeAppDelegate.m in Sources */,
 				D8D9031C183AE9D4005A6562 /* WelcomeViewController.m in Sources */,
+				D8D90343183C7626005A6562 /* SafetyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +479,7 @@
 				D8D90336183AE9D4005A6562 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8D90337183AE9D4005A6562 /* Build configuration list for PBXNativeTarget "SyftTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +488,7 @@
 				D8D90339183AE9D4005A6562 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

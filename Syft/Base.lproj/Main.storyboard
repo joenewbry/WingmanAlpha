@@ -1,21 +1,832 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="53q-hE-hPT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="kqa-6U-lWG">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="53q-hE-hPT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uCl-Fi-PMh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="I3d-0X-s2y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sua-s4-ULP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-942" y="12"/>
+        </scene>
+        <!--Welcome View Controller - Welcome-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="WelcomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Se0-EO-iwv"/>
+                        <viewControllerLayoutGuide type="bottom" id="31S-eV-MuH"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grh-Ds-Usr">
+                                <rect key="frame" x="21" y="185" width="276" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Join us">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ufh-fb-l3J" kind="push" id="PWb-mq-Jho"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJK-Tf-RWy">
+                                <rect key="frame" x="21" y="251" width="276" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.0" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="D5Z-hE-EYk" kind="push" id="SXa-PO-agR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wingman" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTG-Oh-hNh">
+                                <rect key="frame" x="33" y="81" width="255" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="61"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="reT-4o-3e6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-431" y="12"/>
+        </scene>
+        <!--View Controller - Join Us-->
+        <scene sceneID="1F9-e0-JqX">
+            <objects>
+                <viewController id="Ufh-fb-l3J" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wJ1-gD-XxX"/>
+                        <viewControllerLayoutGuide type="bottom" id="sli-EX-KhB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ycy-kB-9ZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6zt-RS-bss">
+                                <rect key="frame" x="0.0" y="129" width="320" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Basic Cell" id="0lg-ph-fzy">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0lg-ph-fzy" id="UIe-GF-5qk">
+                                            <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ufh-fb-l3J" id="Uer-8K-3Jt"/>
+                                    <outlet property="delegate" destination="Ufh-fb-l3J" id="V6a-ED-PzJ"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LET'S GET STARTED!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYu-Da-CrY">
+                                <rect key="frame" x="10" y="100" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Join Us" id="8Wm-cr-jpo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIY-zQ-oww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="-343"/>
+        </scene>
+        <!--View Controller - Sign In-->
+        <scene sceneID="MbS-hd-sSC">
+            <objects>
+                <viewController id="D5Z-hE-EYk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AOn-Xt-KcI"/>
+                        <viewControllerLayoutGuide type="bottom" id="pAK-Zv-z8N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pLn-lm-bB4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dyj-en-5ba">
+                                <rect key="frame" x="20" y="79" width="280" height="469"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign In" id="ROi-GW-qW6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgD-Xw-RqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="396"/>
+        </scene>
+        <!--Safety View Controller - Safety-->
+        <scene sceneID="aPn-Ar-ahS">
+            <objects>
+                <viewController id="8cR-Ti-EC4" customClass="SafetyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J7S-9S-eIT"/>
+                        <viewControllerLayoutGuide type="bottom" id="EPK-jb-7qm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vnU-Sq-z7e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vxd-xG-b2Z">
+                                <rect key="frame" x="20" y="73" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Safety Tips"/>
+                                    <segment title="Meeting Offline"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changePlainSegmentView:" destination="8cR-Ti-EC4" eventType="valueChanged" id="wr8-nA-5Ez"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="axA-H0-tQ1">
+                                <rect key="frame" x="20" y="110" width="280" height="458"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">*** Safety Tips ***  We want your interactions with the Syft community to be as safe as possible. So we've put together some best practices on how to chat and meet, online and offline.  For those under 18, we strongly recommnd that you only chat and meet with people within your age group, people you already know or with whom you have established a trusted online friendship where that person's identity has been verified by other friends.  ** Safety Tips for Meeting Offline **  There is no substitute for acting with caution when communication with a stranger. You are in control of your online experience at all times - remain anonymous until you feel ready and confident that the person you've been chatting with is safe to meet. Remember to always trust your instincts. If you feel unsafe or threatened, cease communication and report any misbehavior immediately by emailing joenewbry@gmail.com.  * Guard your identity * Do not post personal contact information in your profile or username. Don't share your real name, personal phone numbers, email address, home address, place of work or any other identifying information until you have established a reasonable level of trust with the other party.  * Remain ananymous until you feel comfortable * Take advantage of the member-to-member technology utilized on Wingman services that protects your identity until YOU choose to reveal it. Wingman does not reveal your email address to other members ever. Wingman reveals your phone number only when you decide to share it with other members.  *Get to know the other person online before meeting them offline* Use the tools available through Wingman that protect your anonymity to get to know someone before meeting them in person. If you would like more information about someone, we recommend using the Internet and government resources available to everyone.  *Block and/or report abusive users* Block any member who behaves or treats you in an abusive way and report the behaivor to Wingman immediately. Call law enforcement if you feel threatened. Stop communication immediatley with anyone who pressures you for personal or financial information. Your involvement will help keep the community fun and enjoyable.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gDl-Xn-Lwt">
+                                <rect key="frame" x="20" y="110" width="280" height="458"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">*** Meeting Offline ***  Nobody gets hurt in a purely online relationship (unless you count hur feelings or cellphone thumb). When you hit it off with someone new, it's exciting to meet in person for the first time, but a little common sense goes a long way. Be smart and take some basic precautions:  * Always meet in public * Meet for the first time in a populated, public location - never in a private or remote location. No walks on the beach, as romantic as that might sound.  * Tell a friend * Inform a friend or family member of your plans and when and where you're going. Be reachable and take your phone with you.  * Stay sober * Do not do anything that would impair your judgement and cause you to make a decision you could regret.  * Find your own transportation to the first meeting * Just in case things don't work out, you need to be in control of your own ride - whether that means driving yourself or taking a taxi.  * Don't leave personal items unattended * You don't want to risk having your personal information stolen. If you're drinking, keep your drink with you at all times so it can't be tampered with.  * Stay in a public place * It is best not to go back to your date's home or bring them back to yours on the first date. If your date pressures you, end the date and leave at once.  * Sex without consent is rape * Always ask for permission and respect boundaries. No means no. When it comes to sex err on the side of caution.  * Sex with an underage person is rape * It does not matter if that person lied about their age. It's rape and you will go to prison.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Safety" id="7g1-sC-Anx"/>
+                    <connections>
+                        <outlet property="meetingOfflineScrollView" destination="gDl-Xn-Lwt" id="cXy-PI-RKl"/>
+                        <outlet property="safetTipsScrollView" destination="axA-H0-tQ1" id="cir-9f-gJu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ie-7L-rku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="1097"/>
+        </scene>
+        <!--Table View Controller - Settings-->
+        <scene sceneID="dW6-yJ-T2K">
+            <objects>
+                <tableViewController title="Settings" id="chH-bq-O7P" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KEa-Nj-kKu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="Match Alerts" id="E9o-iz-BJf">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="c4z-Eo-b4c" style="IBUITableViewCellStyleDefault" id="HV5-HW-F3N">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="HV5-HW-F3N" id="yU0-3c-gw2">
+                                            <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Vibrate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c4z-Eo-b4c">
+                                                    <rect key="frame" x="15" y="0.0" width="266" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="TdS-yc-q6N" style="IBUITableViewCellStyleDefault" id="Lk4-rv-RJ3">
+                                        <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lk4-rv-RJ3" id="Cvt-He-R72">
+                                            <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Play Sound" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TdS-yc-q6N">
+                                                    <rect key="frame" x="15" y="0.0" width="266" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="xa6-8a-MCf" style="IBUITableViewCellStyleDefault" id="ozX-4F-aI7">
+                                        <rect key="frame" x="0.0" y="174" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ozX-4F-aI7" id="Csz-wf-2bL">
+                                            <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Display Notification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xa6-8a-MCf">
+                                                    <rect key="frame" x="15" y="0.0" width="266" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Account" id="ylS-Xo-OAH">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="gKe-5P-Bzi" style="IBUITableViewCellStyleDefault" id="GOs-ja-V55">
+                                        <rect key="frame" x="0.0" y="240" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GOs-ja-V55" id="9zY-dG-nCC">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Change Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gKe-5P-Bzi">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BAN-GH-KOf" kind="push" id="MAr-nU-n0A"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="UDU-Bf-zDy" style="IBUITableViewCellStyleDefault" id="aKJ-kV-L4e">
+                                        <rect key="frame" x="0.0" y="284" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aKJ-kV-L4e" id="Dfo-tv-cVR">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Block Users" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UDU-Bf-zDy">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="0bP-3s-W4S" kind="push" id="YwF-YN-3NX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="9yX-ub-efk" style="IBUITableViewCellStyleDefault" id="CE9-qI-Szm">
+                                        <rect key="frame" x="0.0" y="328" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CE9-qI-Szm" id="sZG-2t-WeP">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Deactivate Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9yX-ub-efk">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="H3Y-n8-HVG" kind="push" id="axJ-iV-8EB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Misc" id="T1J-Ah-6UP">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="JGV-gh-aAt" style="IBUITableViewCellStyleDefault" id="HNj-NZ-i80">
+                                        <rect key="frame" x="0.0" y="394" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HNj-NZ-i80" id="uqZ-Iu-352">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Terms of Use" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JGV-gh-aAt">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="0sP-XL-9CX" kind="push" id="wJ2-BY-iCV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="akP-TG-OU2" style="IBUITableViewCellStyleDefault" id="hFq-FP-cFo">
+                                        <rect key="frame" x="0.0" y="438" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hFq-FP-cFo" id="kjA-EP-GGO">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Privacy Policy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="akP-TG-OU2">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5GJ-Hf-69S" kind="push" id="JZU-ha-g1W"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="nVG-2p-wWd" style="IBUITableViewCellStyleDefault" id="CJF-Dl-rnp">
+                                        <rect key="frame" x="0.0" y="482" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CJF-Dl-rnp" id="agV-H7-9jR">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Safety Tips" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nVG-2p-wWd">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8cR-Ti-EC4" kind="push" id="Jks-mg-bjH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="chH-bq-O7P" id="ee7-CS-ksJ"/>
+                            <outlet property="delegate" destination="chH-bq-O7P" id="ElS-0x-ga3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="l4o-nH-n4k"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5k-Hf-6ZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="379"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CzT-qe-ARA">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="fGB-Ch-mw5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jv8-oD-mQl">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="chH-bq-O7P" kind="relationship" relationship="rootViewController" id="Qgv-Cs-NZD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1E-nJ-fE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="379"/>
+        </scene>
+        <!--View Controller - Safety-->
+        <scene sceneID="7RZ-hN-eQL">
+            <objects>
+                <viewController id="TLw-zZ-DOD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bt4-6R-P2u"/>
+                        <viewControllerLayoutGuide type="bottom" id="wxx-x1-PYS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fU2-a4-nlU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gxi-0E-QkQ">
+                                <rect key="frame" x="20" y="110" width="280" height="458"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">*** Safety Tips ***  We want your interactions with the Syft community to be as safe as possible. So we've put together some best practices on how to chat and meet, online and offline.  For those under 18, we strongly recommnd that you only chat and meet with people within your age group, people you already know or with whom you have established a trusted online friendship where that person's identity has been verified by other friends.  ** Safety Tips for Meeting Offline **  There is no substitute for acting with caution when communication with a stranger. You are in control of your online experience at all times - remain anonymous until you feel ready and confident that the person you've been chatting with is safe to meet. Remember to always trust your instincts. If you feel unsafe or threatened, cease communication and report any misbehavior immediately by emailing joenewbry@gmail.com.  * Guard your identity * Do not post personal contact information in your profile or username. Don't share your real name, personal phone numbers, email address, home address, place of work or any other identifying information until you have established a reasonable level of trust with the other party.  * Remain ananymous until you feel comfortable * Take advantage of the member-to-member technology utilized on Wingman services that protects your identity until YOU choose to reveal it. Wingman does not reveal your email address to other members ever. Wingman reveals your phone number only when you decide to share it with other members.  *Get to know the other person online before meeting them offline* Use the tools available through Wingman that protect your anonymity to get to know someone before meeting them in person. If you would like more information about someone, we recommend using the Internet and government resources available to everyone.  *Block and/or report abusive users* Block any member who behaves or treats you in an abusive way and report the behaivor to Wingman immediately. Call law enforcement if you feel threatened. Stop communication immediatley with anyone who pressures you for personal or financial information. Your involvement will help keep the community fun and enjoyable.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5cj-lR-EzG">
+                                <rect key="frame" x="20" y="110" width="280" height="458"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">*** Meeting Offline ***  Nobody gets hurt in a purely online relationship (unless you count hur feelings or cellphone thumb). When you hit it off with someone new, it's exciting to meet in person for the first time, but a little common sense goes a long way. Be smart and take some basic precautions:  * Always meet in public * Meet for the first time in a populated, public location - never in a private or remote location. No walks on the beach, as romantic as that might sound.  * Tell a friend * Inform a friend or family member of your plans and when and where you're going. Be reachable and take your phone with you.  * Stay sober * Do not do anything that would impair your judgement and cause you to make a decision you could regret.  * Find your own transportation to the first meeting * Just in case things don't work out, you need to be in control of your own ride - whether that means driving yourself or taking a taxi.  * Don't leave personal items unattended * You don't want to risk having your personal information stolen. If you're drinking, keep your drink with you at all times so it can't be tampered with.  * Stay in a public place * It is best not to go back to your date's home or bring them back to yours on the first date. If your date pressures you, end the date and leave at once.  * Sex without consent is rape * Always ask for permission and respect boundaries. No means no. When it comes to sex err on the side of caution.  * Sex with an underage person is rape * It does not matter if that person lied about their age. It's rape and you will go to prison.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Safety" id="PZp-qr-5LB"/>
+                    <connections>
+                        <outlet property="meetingOfflineScrollView" destination="5cj-lR-EzG" id="iLL-Ur-VOm"/>
+                        <outlet property="safetTipsScrollView" destination="Gxi-0E-QkQ" id="WNV-nE-k6Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRR-Yx-gUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2936" y="-367"/>
+        </scene>
+        <!--View Controller - Privacy Policy-->
+        <scene sceneID="cnj-dq-KOv">
+            <objects>
+                <viewController id="5GJ-Hf-69S" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0d5-gk-3NV"/>
+                        <viewControllerLayoutGuide type="bottom" id="WAS-3d-r7s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lgf-y0-iv2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GbY-Tk-Aw6">
+                                <rect key="frame" x="20" y="65" width="280" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Wingman TERMS OF USE AGREEMENT
+*** Privacy Policy ***
+Last updated: November 18, 2013
+This Privacy Policy (the "Policy") explains how information is collected, used and disclosed by Wingman. with respect to your access and use of Wingman’s services through our mobile applications (Wingman) or in connection with social networking services (together referred to below as "Wingman" or the "Service"). 
+** What Information Do We Collect? **
+We collect certain information when you connect to or use Wingman in various ways. This information may be information that can identify you as a person or non-personal information and is either collected automatically or as a result of your specific input of the information. All information collected in any way is referred to collectively in this Policy as "Information." All Information is currently processed and stored in the United States on either Wingmanâs servers or within Amazon Web Services via Parse. 
+* Website Visit *
+We automatically collect information when you visit our websites. We collect your IP address and browser header (version and type of browser) in a log file. We also collect your Internet service provider (ISP), referring/exit pages, platform type, date/time stamp, and number of clicks.
+We may also automatically collect certain Information through the use of "cookies" or web beacons. These are small files that your browser places on your computer. We may use both session cookies and persistent cookies to better understand how you interact with the websites, to monitor aggregate usage by our users and web traffic routing on our websites, and to improve our Service.
+Most Internet browsers automatically accept cookies. You can instruct your browser, by editing its options, to stop accepting cookies or to prompt you before accepting a cookie from the websites you visit.
+We may feature advertisements served by third party advertising companies which deliver cookies to your computer so the advertisements you see can be tracked. These advertisers may use information about your visits to our websites in order to provide advertisements about goods and services of interest to you.
+Third party advertising companies may collect information using Web beacons. Web beacons or "gifs", are electronic images that may be used on our websites. Advertisers may use web beacons in connection with our websites in order to collect and use data regarding advertisement performance and your interests for the purpose of delivering relevant advertising to you.
+You may click on the following links: http://www.networkadvertising.org/choices/ and http://www.aboutads.info/choices/ for information on how to opt-out of the use of cookies or Web beacons.
+* Sign Up/Install *
+You may be required to provide the following Information to Wingman when you install a Wingman mobile application or sign up for the Services: your email address, your username, your gender, your age, your interests and your picture (for your profile or for the "Backstage" feature). We automatically collect the time you connect ("timestamp"). Also, if you sign up via an ad click, we automatically collect your device type and unique device identifier
+* Login *
+We collect the following Information each time you log in to Wingman: your geographic location (specified by latitude and longitude), your IP address and the MAC address of the device you are using. If you are logging in on the iOS platform, we also collect the Identifier for Vendor ("IFV"), the Identifier for Advertiser ("IFA"), your UDID (in versions prior to STATE VERSION OR DATE) or Open UDID. If you are logging in on an Android platform, we also collect your Android ID, your input method editor ("IME") and your mobile equipment identifier ("MEID"). Also, if you log in through an ad identifier, we collect your device type and a timestamp. We collect all of the above Information automatically as part of the log in process.
+* Sign up via Facebook *
+We collect the following Information when you sign up for Wingman via your Facebook account: your name, your email address, your Facebook profile picture, your gender, your birthday, how many Facebook friends you have, your Facebook ID, your Facebook likes, your Facebook preferences, any other Facebook data you choose to share, and a timestamp. We collect all of the above information automatically as part of the Facebook sign up process. If you want us to delete the data we receive from Facebook about you, please contact us at joenewbry@gmail.com.
+* Social Media *
+As indicated above, we may provide you with the option to connect your Wingman account to your account on a social networking site for the purpose of logging in, uploading information or enabling certain features on the Service. By connecting your Wingman account to your account on any social networking site, you consent to the continuous release of information about you from the social networking site to Wingman while the accounts remain connected.
+* Add Friends *
+We collect the following Information when you add friends, either via your Facebook account or your address book: If you choose to add a friend through your deviceâs address book, we collect your friendâs name, phone number and/or email address. If you choose to add friends through Facebook, we access your friendâs Facebook name and Facebook ID. When inviting friends from your address book or your Facebook account, you must manually choose each person that you want to invite; we do not "auto-invite" your entire address book or set of Facebook friends. We collect all of the above information automatically as part of the process of adding friends.
+* Chat *
+We collect the following information when you use Wingmanâs chat feature: the text of your chat session, any pictures youâve shared in the chat session and a timestamp.
+* Location Information *
+In addition to the geographic Information collected when you log in, we automatically receive an approximation of your geographic location when you use the Service. When you use the Wingman App on a mobile device, you can allow Wingman to receive your more precise location by enabling or disabling location services through your mobile device settings.
+* Platforms *
+In the course of providing our Service on third party platforms, such as Appleâs App Store, the platforms may collect Information about you or receive Information from us in order for the platform to provide or analyze their services. Please note that these platforms were developed and administered by people or companies not affiliated with or controlled by Wingman and that Wingman is not responsible for the actions of those people or companies. You should carefully review the terms of service and privacy policies of the platforms that you use to access our Service.
+** How Do We Use the Information We Collect? **
+We use Information for the following purposes:
+to administer our websites and provide our services or information you request
+to process and complete any transactions;
+to promote Wingman in general;
+to provide you with advertising of interest to you;
+to identify your location to other Wingman users, if you choose to enable this feature;
+to respond to your emails, submissions, questions, comments, requests, and complaints and provide customer service;
+to provide you with better service relating to any sort of purchases, and to increase the functionality and user friendliness of our services;
+to monitor and analyze user behavior and trends;
+to track visitor movement and activity in the aggregate (for example, to give us information about what parts of the websites users are visiting)
+to personalize and improve Wingman products and features and your experiences when you use Wingman, such as providing content or features that match your profile, location or interests;
+to send you confirmations, updates, security alerts, and support and administrative messages and otherwise facilitate your use of, and our administration and operation of, our services;
+help prevent fraud or other misuse
+to connect with your friends (when instructed by you); and
+for any other stated purpose for which the Information was collected.
+In addition, we may use your email address to send you emails for both transactional (e.g.,confirmation of or issues with Services) and promotional purposes (e.g., newsletters, new product offerings, special discounts, event notifications and third-party offers). Email messages we send to you may contain code that enables our database to track your usage of the emails, including whether the email was opened and what links (if any) were clicked. If you would rather not receive promotional emails from us, please see the section in each email labeled "Choice/Opt-Out".
+** With Whom Do We Share Your Information? **
+We may share Information as follows:
+with in-app advertisers or advertising networks for the purpose of providing advertising of interest to you within Wingman or advertising Wingman in other locations;
+with analytics providers for the purpose of analyzing user data;
+with service providers who are working with us in connection with the operation of our site or our services;
+anonymous or aggregate data with third parties for industry analysis, demographic profiling and other similar purposes;
+when you give us your consent to do so;
+when we believe in good faith that we are lawfully authorized or required to do so or that doing so is reasonably necessary or appropriate to comply with the law or legal processes or respond to lawful requests or legal authorities, including responding to lawful subpoenas, warrants or court orders;
+to enforce or apply our privacy policy, our terms of use or our other policies or agreements;
+to protect the rights, property, or safety of Wingman, our users, or others; and
+in connection with, or during negotiations of, any merger, sale of company assets, financing or acquisition, or in any other situation where personal information may be disclosed or transferred as one of our business assets.
+** What Information Can the Other Users See? **
+A main purpose of using Wingman is to meet and interact with new people. The information you enter in your profile, including your backstage pics, your location (if you enable that feature), photos you upload to your profile, and virtual gifts you receive, are visible to all Wingman users within your age category. Other Wingman users may also see the fact that you have viewed their Wingman profiles.
+Any text and images you send to a chat recipient will be visible to that recipient. Wingman also allow contact sharing between two matched users. If both users want to exchange their mobile phone numbers they may. This number is only visible to the user it is shared with.
+
+** How Do We Use Your Information for Advertising and Analytics? **
+We may allow advertisers and analytics providers to collect your Information within the Service and they may share it with us. Advertisers may collect your Information through the use of tracking technologies such as browser cookies and web beacons. The Information collected may be used to offer advertisements of particular interest to you and to analyze your activity within the Service to improve your experience.
+When we purchase advertising space on the mobile platform, we share a list of UDIDs and other device ID Information with the ad networks with which we are interacting. Ad networks use this information to match the list of identifiers with identifiers they can confirm have downloaded or installed our Service through an advertisement. When we sell advertising space on the mobile platform, ad networks may collect the following user Information in order to provide advertising of interest to you: IP address, http: header information, location (including longitude/latitude), age, gender and unique device IDs. We do not provide to ad networks names, user names, phone numbers, or email addresses. We also use third parties such as Flurry and MixPanel to collect and analyze your Information. You can opt-out of Flurry Analytics tracking at http://www.flurry.com/user-opt-out.html. We use Google Analytics to track your visits to our websites.
+** Links to Other Sites **
+Wingman may contain links to other sites and apps, including in advertisements. Any information you provide on those sites is provided directly to the owner of that site and is subject to that party's privacy policy. Our privacy policy does not apply to such sites, and we are not responsible for the content or privacy and security practices and policies of those sites.
+** What Steps Do We Take To Protect Your Information? **
+While we take measures to protect your Information in an effort to prevent loss, misuse and unauthorized access, disclosure and alteration, despite our efforts, no security measures are impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.
+** Accessing and Modifying Your Information **
+If you have an account, you can access and modify certain Information that you provided to us that is associated with your account by logging in and editing your profile information on Wingman. Note that you may not modify your location Information, which is automatically collected. To request modifications to any Information that you cannot edit via the Service, please contact Wingmanâs user support at joenewbry@gmail.com.
+** Opting Out **
+You may "opt out" of receiving marketing or promotional emails and push notifications from us by changing your account preferences or by following the instructions in those emails. If you opt out of these messages, you will still receive emails from us, about your account, our services and other pertinent information related to our services. These communications are considered part of the service and your account, which you cannot opt-out from receiving.
+** Deactivating Your Account and Deleting Account Information **
+You can deactivate your account by selecting the "deactivate" link. Deactivating your account lets you remove your profile without permanently deleting it. When you deactivate your account, other users will no longer see your profile or Information. We reserve the right, but are not required, to permanently delete your Information if you do not reactivate your account within 60 days of deactivation. If you would like your account Information permanently deleted, you may contact Wingman customer support at joenewbry@gmail.com and request permanent deletion. We will then delete all of your account Information.
+** International Users **
+If you are located outside the United States, please note that we may transfer your Information to the United States (or any other country in which we operate) and process it there. By using Wingman, you consent to the collection, transfer, use, storage and disclosure of your Information as described in this Policy.
+** Our Policy Toward Children **
+Our service is not directed to children under 13 and we do not knowingly collect personal Information from children under 13. If we learn that we have collected personal Information of a child under 13, we will take steps to delete such Information from our files as soon as possible.
+** Your California Privacy Rights **
+Under California Civil Code Section 1798.83, California residents may request and obtain from Wingman once a year, free of charge, a list of third parties who receive personal information (if any) for their direct marketing purposes and the categories of personal information disclosed to those third parties. To request this information sharing disclosure, please contact Wingman at joenewbry@gmail.com.
+** Changes to the Policy **
+Any Information that is collected is subject to the Policy in effect at the time such Information is collected. We may, however, modify the Policy from time to time. If we make any material changes to this Policy, we will notify you of such changes by posting them on Wingman or by sending you an email or other notification, and we will indicate when such changes will become effective. By continuing to access or use Wingman after those changes become effective, you are agreeing to have your Information collected, used and disclosed as described in the modified Policy.
+** Online Safety **
+We want user interactions to be as safe as possible on Wingman. Read about our commitment to online safety at http://www.wingman.com/onlineSafetyTips.jsp. If you are a member of our teen community, Wingman encourages you to discuss with your parent(s) or guardian(s) online safety issues for all of your social media memberships, including your Wingman account.
+** Disclosure to Protect Abuse Victims **
+Notwithstanding any other provision of this Policy, Wingman reserves the right, but has no obligation, to disclose any Information that you submit to Wingman, if in its sole opinion, Wingman suspects or has reason to suspect, that the Information involves a party who may be the victim of abuse in any form. Abuse may include, without limitation, elder abuse, child abuse, spousal abuse, neglect, or domestic violence. Information may be disclosed to authorities that Wingman, in its sole discretion, deems appropriate to handle such disclosure. Appropriate authorities may include, without limitation, law enforcement agencies, child protection agencies, or court officials.
+** Questions? **
+Please contact joenewbry@gmail.com if you have any questions about this Policy.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Privacy Policy" id="Rx4-Dh-Va3"/>
+                    <connections>
+                        <outlet property="safetTipsScrollView" destination="GbY-Tk-Aw6" id="h01-FE-xlr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHo-hZ-TQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2128" y="1061"/>
+        </scene>
+        <!--View Controller - Block Users-->
+        <scene sceneID="9ig-pq-138">
+            <objects>
+                <viewController id="0bP-3s-W4S" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0fA-pW-nsY"/>
+                        <viewControllerLayoutGuide type="bottom" id="62T-GK-Xe8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8JV-uj-5Dv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="OpM-zp-iWS">
+                                <rect key="frame" x="20" y="72" width="280" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">All Wingman matches are temporary. You have the option to remove anyone that you're matched with from your matching pool. In which case he or she will never show up as a match again.   In addition anyone that you've connected with can be removed from your connections by clicking on the delete button in the messaging settings.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OpM-zp-iWS" firstAttribute="top" secondItem="0fA-pW-nsY" secondAttribute="bottom" constant="10" id="LY5-Z0-XLO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Block Users" id="wiE-VL-kWJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QlW-95-4Q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="407"/>
+        </scene>
+        <!--View Controller - Terms of Use-->
+        <scene sceneID="jbf-Df-14E">
+            <objects>
+                <viewController id="0sP-XL-9CX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lNC-8l-16d"/>
+                        <viewControllerLayoutGuide type="bottom" id="nqs-wV-PYd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hia-ef-302">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8j-4S-HmU">
+                                <rect key="frame" x="20" y="65" width="280" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Wingman TERMS OF USE AGREEMENT
+*** Terms of Use ***
+Terms Of Use
+Please read these Terms of Use carefully, which include and hereby incorporate the Privacy Policy and Acceptable Use Policy (collectively, the "Terms"). Wingman provides a service that allows Account holders to create unique personal profiles and communicate with other members based on location. These Terms govern and apply to your access and use of Wingman's social networking services available via Wingman's mobile apps (Wingman, Flurv and Boyahoy) (collectively, the "Apps") and Wingman's websites (www.wingman.com) (collectively, the "Sites"). To make these Terms easier to read, the Sites, our services and the Apps are collectively called the "Services."
+This document constitutes a legally binding agreement between you and Wingman, Inc. ("Wingman") The Service(s) are not intended for use by children under 13 years of age.
+** Agreement to Terms **
+By accessing or using our Services, you agree that (1) you are age 13 or older, (2) you understand and agree to these Terms, and (3) if you are between the ages of 13 and 18, your legal guardian has reviewed and agrees to these Terms.
+IF YOU DO NOT UNDERSTAND OR DO NOT AGREE TO THESE TERMS, DO NOT USE THE SERVICE. IF YOU DO NOT AGREE TO THESE TERMS, THEN YOU HAVE NO RIGHT TO ACCESS OR USE THE SERVICE. USE OF THE SERVICE IS VOID WHERE PROHIBITED.
+** Changes to Terms or Services **
+We may modify the Terms at any time, in our sole discretion. If we do so, we'll let you know either by posting the modified Terms on the Site or through other communications. It's important that you review the Terms whenever we modify them because if you continue to use the Services after we have posted modified Terms on the Site, you are agreeing to be bound by the modified Terms. If you don't agree to be bound by the modified Terms, then you can't use the Services anymore. If you object to any change or modification, your sole recourse shall be to cease using the Services. YOU AGREE THAT SKOUT SHALL NOT BE LIABLE TO YOU OR TO ANY THIRD PARTY FOR ANY CHANGE OR MODIFICATION TO THESE TERMS. Except as may be expressly specified otherwise by Wingman with respect to paid portions of the Services, we reserve the right to add, change, suspend or discontinue the Services, or any aspect or feature of the Services, without notice or liability.
+** Who May Use the Services **
+You may use the Services only if you are 13 years or older and are not prohibited from using the Services under applicable law or under any provision of these Terms. Additional eligibility requirements are as follows.
+* Eligibility on Wingman - Adult Community *
+You must be at least 18 years old to use the Wingman Adult Site or to register for the Services. By using the Adult Site, you represent and warrant that you are at least 18 years old. If you're between the ages of 13-17, you may use Wingman for Teens.
+* Eligibility on Wingman - Teen Community *
+You must be at least 13 years old or older to use the Wingman Teen Site or to register for the Services. By using the Teen Site, you represent and warrant that you are at least 13 years old. Please note that if you register for Wingman for Teens, when you turn 18 you will automatically be migrated to the Wingman Adult Site and your minor friends will be lost.
+If you're younger than 13, go outside and play!
+* Eligibility on Wingman - Criminal History and Background Checks of Users *
+By requesting to use, registering to use, and/or using the Adult or Teen Wingman Service, you represent and warrant that you have never been convicted of a felony and/or are not required to register as a sex offender with any government entity. Wingman DOES NOT CURRENTLY CONDUCT CRIMINAL BACKGROUND SCREENINGS ON ITS MEMBERS. However, Wingman reserves the right to conduct any criminal background check, at any time and using available public records, to confirm your compliance with your representations and warrants above. BY AGREEING TO THESE TERMS AND CONDITIONS, YOU HEREBY AUTHORIZE ANY SUCH CHECK.
+** Privacy Policy **
+Please refer to our Privacy Policy for information on how we collect, use and disclose information, including personal information, from our users.
+** Creating a Wingman Account **
+To access and use the Services, you will need to register and create an account (your "Account"). You can do this by providing an email address and password or through your account with Facebook. When creating an Account, you will be required to provide certain personal information about yourself, including your age. If you choose to register your Account using your Facebook account, we will extract certain personal information from your Facebook account, such as your name, age, email address and other personal information that your privacy settings on your Facebook account permit us to access. Only users who are 18 or older may register an Account on BoyAhoy.
+It's important that you provide us with accurate, complete and up-to-date information for your Account, and you agree to update such information, as needed, to keep it accurate, complete and up-to-date. Because Wingman maintains separate communities for users who are between the ages of 13 and 17 and users who are 18 and older, it is especially important that you are truthful when identifying your age. Your profile may be deleted, and your Account may be terminated without warning, if we believe that you are under 13 years of age, if you represent yourself as under the age of 18 and we believe that you have misrepresented your age, or if we believe you are over 18 and represent yourself as under 18.
+You agree that you won't disclose your Account password to anyone and you'll notify us immediately of any unauthorized use of your Account. You are responsible for all activities that occur under your Account, whether or not you know about them.
+** Content and Content Rights **
+For purposes of these Terms: "Content" means text, graphics, images, music, software, audio, video, works of authorship of any kind, and information or other materials that are posted, generated, provided or otherwise made available through the Services; and "User Content" means any Content that Account holders (including you) provide to be made available through the Services. Accordingly, Content includes but is not limited to User Content.
+* Content Ownership, Responsibility and Removal *
+Wingman does not claim any ownership rights in any Content that you make available through the Services and nothing in these Terms will be deemed to restrict any rights that you may have to use and exploit your User Content. Subject to the foregoing, Wingman and its licensors exclusively own all right, title and interest in and to the Services and Content, including all associated intellectual property rights. You acknowledge that the Services and Content are protected by copyright, trademark, and other laws of the United States and foreign countries. You agree not to remove, alter or obscure any copyright, trademark, service mark or other proprietary rights notices incorporated in or accompanying the Services or Content.
+* Rights in User Content Granted by You *
+By making any User Content available through Services you hereby grant to Wingman a perpetual, non-exclusive, transferable, sublicenseable, worldwide, royalty-free license to use, copy, modify, create derivative works based upon, distribute, publicly display, publicly perform and distribute your User Content in connection with operating and providing the Services and Content to you and to other Account holders.
+You are solely responsible for all your User Content. You represent and warrant that you own all your User Content or you have all rights that are necessary to grant us the license rights in your User Content under these Terms. You also represent and warrant that neither your User Content, nor your use and provision of your User Content to be made available through the Services, nor any use of your User Content by Wingman on or through the Services will infringe, misappropriate or violate a third party's intellectual property rights, rights of publicity or privacy, or any other rights or result in the violation of any applicable law or regulation.
+You can remove your User Content by specifically deleting it from your profile. However, in certain instances, some of your User Content (such as virtual gifts you give or chat messages you send) may not be completely removed and copies of your User Content may continue to exist on the Services. We are not responsible or liable for the removal or deletion of (or the failure to remove or delete) any of your User Content.
+* Rights in Content Granted by Wingman *
+Subject to your compliance with these Terms, Wingman grants you a limited, non-exclusive, non-transferable, non-sublicenseable license to download, view, copy, display and print the Content solely in connection with your permitted use of the Services and solely for your personal and non-commercial purposes.
+** Virtual Items; Wingman Points **
+You may obtain points through the Apps ("Wingman Points") or other virtual items by engaging in certain actions (for example, by downloading third party apps) or purchasing them for the amounts set forth in the Apps. Wingman Points and such other virtual items are referred to collectively as "Virtual Items." Virtual Items are digital items only, and regardless of the terminology used, have no cash value and may never be redeemed for "real world" money. Your right to use any Virtual Items that you obtain is limited to a non-exclusive, non-transferable, non-sublicenseable, revocable right to use such Wingman Points or other Virtual Items solely within the Apps, for example, to send "gifts" to other users, save pictures or use the "checked me out" functionality. Except for the limited rights described herein, you have no property interest or right or title in or to any Virtual Items, which remain the exclusive property of Wingman. The scope, variety and type of Virtual Items that you may obtain can change at any time. Wingman has the absolute right to manage, regulate, control, modify or eliminate such Virtual Items as it sees fit in its sole discretion, and Wingman will have no liability to you or any third party for the exercise of such rights at any time.
+Except where explicitly authorized within the Services, (i) transfers of Virtual Items between you and Account holders or third parties are strictly prohibited; (ii) outside of the Services, you may not buy or sell any Virtual Items for "real world" money or otherwise exchange items for value; and (iii) Wingman does not recognize any such purported transfers of Virtual Items, nor the purported sale, gift or trade in the "real world" of anything that appears in the Services. Any attempt to do any of the foregoing is a violation of these Terms and will result in an automatic termination of your rights to use the Virtual Items and may result in termination of your Account, a lifetime ban from the Service and/or possible legal action. All Virtual Items are forfeited if your Account is terminated or suspended for any reason, in Wingman's sole and absolute discretion, or if Wingman discontinues providing the Services or Virtual Items.
+** Acceptable Use Policy, Rules and Restrictions and Our Enforcement Rights **
+* Acceptable Use Policy *
+We ask that you respect our community of users and our desire for such users to feel safe when using the Services, including any Content. Accordingly, you agree that you'll only use the Services for lawful purposes and in a manner that is consistent with our Acceptable Use Policy. If you use the Services in a manner that is inconsistent with our Acceptable Use Policy we may suspend or terminate your Account.
+* Rules and Restrictions *
+As a condition of your use of the Services, and without limiting your other obligations under these Terms, you agree to comply with the restrictions and rules of use set forth in this Section as well as any additional restrictions or rules set forth in the Services.
+The Services are for your personal and noncommercial use only. You shall not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, reverse engineer, transfer or sell for any commercial purposes any portion of the Services, use of the Services or access to the Services, except for limited reverse engineering activities that may be, and only to the extent, permitted by applicable law.
+You also agree not to:
+interfere with or disrupt the Services or servers or networks connected to the Services;
+interfere with, disrupt or circumvent any security feature of the Services;
+use the Services to violate, whether intentionally or unintentionally, any applicable local, state, national or international law;
+use the Service to harm minors in any way;
+use the Services to reveal any personal information about another individual, including any information that may be used to track, contact or impersonate that individual;
+defraud or mislead Wingman or other users or impersonate any person or entity or falsely state or otherwise misrepresent your affiliation with a person or entity;
+create any Account by automated means or false pretenses or use any other user's Account for any purpose, including to circumvent a suspension or ban; or
+disguise the origin of any access to the Services.
+You further agree to comply with all local rules regarding online conduct and acceptable User Content, and you agree to comply with all applicable laws regarding the transmission of technical data exported from the United States or the country in which you reside.
+This provision is not meant to be exhaustive, and Wingman reserves the right to determine what conduct it considers to be in violation of this provision or otherwise outside the spirit of the Services and to take action, which may include termination of your Account and exclusion from further participation in the Services.
+* Safety and Security *
+We care about your safety and have created a resource to help you use our Services. Please review our Safety Awareness Center for important tips to help you stay safe when using our Services. While we take steps to provide a safe user environment in our online communities, Wingman is not responsible for the conduct, whether online or offline, of any user of its Services. If you are a member of our teen community, Wingman encourages you to discuss with your parent(s) or guardian(s) online safety issues for all of your social media memberships, including your Wingman account.
+* Disclosure to Protect Abuse Victims *
+Notwithstanding any other provision of these Terms, Wingman reserves the right, but has no obligation, to disclose any information that you submit to the Service if in its sole opinion Wingman suspects or has reason to suspect that the information involves a party who may be the victim of abuse in any form. Abuse may include without limitation elder abuse, child abuse, spousal abuse, neglect, or domestic violence. Information may be disclosed to authorities that Wingman, in its sole discretion, deems appropriate to handle such disclosure. Appropriate authorities may include without limitation law enforcement agencies, child protection agencies, or court officials. You hereby acknowledge and agree that Wingman is permitted to make such disclosures.
+* Wingman's Enforcement Rights *
+Although we are not obligated to monitor access to or use of the Services or Content or to review or edit any Content, we have the right to do so including, but not limited to, for the purpose of operating the Services, to ensure compliance with these Terms, or to comply with applicable law or other legal requirements. We reserve the right, but are not obligated, to remove or disable access to any Content, at any time and without notice, including, but not limited to, if we, in our sole discretion, consider any Content to be objectionable or in violation of these Terms. We have the right to investigate violations of these Terms or conduct that affects the Services. We may also consult and cooperate with law enforcement authorities to prosecute users who violate the law.
+* Complaints and Law Enforcement Contact Information *
+To resolve a complaint regarding the Service, you should review our Frequently Asked Questions (FAQ) by clicking on the Safety page or the "Contact Us" located at the bottom of any page of the Wingman website, or e-mail us by clicking here. Law enforcement officials may send correspondence (such as subpoenas, court orders and warrants) to Wingman via email to:joenewbry@gmail.com. All other communication or inquiries sent to this email address will be discarded.
+** DMCA/Copyright Policy **
+Wingman respects copyright law and expects its users to do the same. It is Wingman's policy to terminate in appropriate circumstances Account holders who repeatedly infringe or are believed to be repeatedly infringing the rights of copyright holders. Please see Wingman's Copyright Policy, for further information. We reserve the right to delete or disable content alleged to be infringing and to terminate repeat infringers.
+** Links to Third Party Sites or Resources **
+The Services may include links to other apps or sites that are not operated by us, including through advertisements. We are providing these links to you only as a convenience and are not responsible for the content or links displayed on such apps or sites. If you decide to download a third-party app or access a third-party site, even if you do so to earn "free Wingman Points", you assume all risk related to such access and use.
+** Feedback **
+You acknowledge and agree that any feedback, comments or suggestions you may provide regarding the Services ("Feedback") will be the sole and exclusive property of Wingman and you hereby irrevocably assign to us all of your right, title and interest in and to all Feedback. You agree that unless otherwise prohibited by law, Wingman may use, sell, disclose and otherwise exploit the Feedback in any way and for any purpose, without restriction and without compensation to you.
+** Termination **
+We may terminate your access to and use of the Services, at our sole discretion, at any time and without notice to you. You may deactivate your Account at any time by clicking the "Deactivate Account" button within your Settings page. When you deactivate your account, your profile and Account will not be viewable by other members of the Services. If you do not reactivate your account within 60 days, your Account will be terminated and closed. Upon any termination, discontinuation or cancellation of Services or your Account, all provisions of these Terms which by their nature should survive will survive, including, without limitation, ownership provisions, warranty disclaimers, limitations of liability, and dispute resolution provisions.
+** Warranty Disclaimers **
+THE SERVICES AND CONTENT ARE PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND. WITHOUT LIMITING THE FOREGOING, WE EXPLICITLY DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE. WE MAKE NO WARRANTY THAT THE SERVICES WILL MEET YOUR REQUIREMENTS OR BE AVAILABLE ON AN UNINTERRUPTED, SECURE, OR ERROR-FREE BASIS. WE MAKE NO WARRANTY REGARDING THE QUALITY, ACCURACY, TIMELINESS, TRUTHFULNESS, COMPLETENESS OR RELIABILITY OF THE SERVICES OR ANY CONTENT.
+** Limitation of Liability **
+NEITHER SKOUT NOR ANY OTHER PARTY INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES OR CONTENT WILL BE LIABLE FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE, OR THE COST OF SUBSTITUTE SERVICES (REGARDLESS OF HOW SUCH DAMAGES ARE CHARACTERIZED) ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES OR CONTENT, OR BODILY INJURY, EMOTIONAL DISTRESS, AND/OR ANY OTHER DAMAGES RESULTING FROM COMMUNICATIONS OR MEETINGS WITH OTHER REGISTERED USERS, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT SKOUT HAS BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THESES EXCLUSIONS OR LIMITATIONS OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU.
+IN NO EVENT WILL THE TOTAL LIABILITY OF SKOUT OR ITS AFFILIATES, EMPLOYEES, DIRECTORS, OFFICERS, CONSULTANTS OR AGENTS (COLLECTIVELY, THE "SKOUT PARTIES") ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES OR CONTENT EXCEED THE GREATER OF THE AMOUNT YOU HAVE PAID TO SKOUT FOR USE OF THE SERVICES OR CONTENT OR ONE HUNDRED DOLLARS ($100). THE LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN SKOUT AND YOU.
+** General Provisions **
+These Terms constitute the entire agreement between us regarding the Services, and supersede and replace any prior agreements we might have between us regarding the Services. If any provision of these Terms is held to be invalid or unenforceable by a court of competent jurisdiction, that provision will be enforced to the maximum extent permissible and the remaining provisions of these Terms will remain in effect.
+You may not assign or transfer these Terms, by operation of law or otherwise, without Wingman's prior written consent. Any attempt by you to assign or transfer these Terms, without such consent, will be null and of no effect. Wingman may freely assign or transfer these Terms without restriction. Subject to the foregoing, these Terms will bind and inure to the benefit of the parties, their successors and permitted assigns.
+Any notices or other communications provided by Wingman under these Terms, including those regarding modifications to these Terms, will be given: (i) by Wingman via email; or (ii) by posting to the Services. For notices made by e-mail, the date of receipt will be deemed the date on which such notice is transmitted.
+Wingman's failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. The waiver of any such right or provision will be effective only if in writing and signed by a duly authorized representative of Wingman. As used in these Terms, the word "including" means "including but not limited to." Except as expressly set forth in these Terms, the exercise by either party of any of its remedies under these Terms will be without prejudice to its other remedies under these Terms or otherwise.
+** Questions &amp; Contact Information **
+Please contact us if you have any questions about our Terms.
+Last Updated Nobember 20, 2013
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terms of Use" id="FeR-Bk-cNA"/>
+                    <connections>
+                        <outlet property="safetTipsScrollView" destination="b8j-4S-HmU" id="xFF-ut-gpl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7P-b5-WfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2536" y="1061"/>
+        </scene>
+        <!--View Controller - Change Password-->
+        <scene sceneID="C02-xA-K1R">
+            <objects>
+                <viewController id="BAN-GH-KOf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eTu-cK-rzx"/>
+                        <viewControllerLayoutGuide type="bottom" id="yOK-VY-5MI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hht-hx-EPp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Use the button below to change your password. We'll send you a password reset linn (or maybe you can do it with in the app)  " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="lG1-TS-Rco">
+                                <rect key="frame" x="20" y="70" width="280" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lG1-TS-Rco" firstAttribute="top" secondItem="eTu-cK-rzx" secondAttribute="bottom" constant="10" id="zbC-2h-3vV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Change Password" id="nk6-UT-72N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJ8-xl-8aI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2316" y="407"/>
+        </scene>
+        <!--Deactivate View Controller - Deactivate Account-->
+        <scene sceneID="ONK-FG-9xS">
+            <objects>
+                <viewController id="H3Y-n8-HVG" customClass="DeactivateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1NF-WU-yFl"/>
+                        <viewControllerLayoutGuide type="bottom" id="SLV-CB-kFt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zun-OP-gty">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="OZi-ir-jSu">
+                                <rect key="frame" x="20" y="75" width="280" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">We're sorry to see you go. If you can let us know why you're leaving that would be great! Just select one of the options on the dial below. Then click the deactivate button. Your account will be completely deactivated and all information associated with the account will be removed.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgz-4u-Och">
+                                <rect key="frame" x="20" y="273" width="280" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXh-Ga-FLE">
+                                <rect key="frame" x="22" y="455" width="276" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.40000000000000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Delete Account">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteAccountPressed:" destination="H3Y-n8-HVG" eventType="touchUpInside" id="xGf-rj-5TW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OZi-ir-jSu" firstAttribute="top" secondItem="1NF-WU-yFl" secondAttribute="bottom" constant="10" id="uiv-l8-6Rd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Deactivate Account" id="VNp-X8-lPJ"/>
+                    <connections>
+                        <outlet property="reasonForLeavingPicker" destination="sgz-4u-Och" id="7eB-97-Sxc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5l-5J-lmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2695" y="407"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
