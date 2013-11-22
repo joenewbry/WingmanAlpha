@@ -41,7 +41,7 @@
 }
 
 - (IBAction)deleteAccountPressed:(id)sender {
-    [PFUser ]
+    //[PFUser ]
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView

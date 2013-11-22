@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87B3242F0960412A8E1827AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B66AC1FE1F4B98B3A7FDE9 /* libPods.a */; };
 		D8D33DC4183E8DEE00866FC6 /* DeactivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D33DC3183E8DEE00866FC6 /* DeactivateViewController.m */; };
+		D8D33DC7183EDF8400866FC6 /* BirthdayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D33DC6183EDF8400866FC6 /* BirthdayViewController.m */; };
+		D8D33DCA183EDF9600866FC6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D33DC9183EDF9600866FC6 /* LoginViewController.m */; };
+		D8D33DCD183EDFA200866FC6 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D33DCC183EDFA200866FC6 /* SignUpViewController.m */; };
+		D8D33DD2183EED1800866FC6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D33DD1183EED1800866FC6 /* libz.dylib */; };
+		D8D33DD4183EEE0B00866FC6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D33DD3183EEE0B00866FC6 /* SystemConfiguration.framework */; };
 		D8D90306183AE9D4005A6562 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D90305183AE9D4005A6562 /* Foundation.framework */; };
 		D8D90308183AE9D4005A6562 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D90307183AE9D4005A6562 /* CoreGraphics.framework */; };
 		D8D9030A183AE9D4005A6562 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D90309183AE9D4005A6562 /* UIKit.framework */; };
@@ -37,9 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5B66AC1FE1F4B98B3A7FDE9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B963A1869B6E472E8C05BF83 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D8D33DC2183E8DEE00866FC6 /* DeactivateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeactivateViewController.h; sourceTree = "<group>"; };
 		D8D33DC3183E8DEE00866FC6 /* DeactivateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeactivateViewController.m; sourceTree = "<group>"; };
-		D8D90302183AE9D4005A6562 /* Syft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Syft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D33DC5183EDF8400866FC6 /* BirthdayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayViewController.h; sourceTree = "<group>"; };
+		D8D33DC6183EDF8400866FC6 /* BirthdayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayViewController.m; sourceTree = "<group>"; };
+		D8D33DC8183EDF9600866FC6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D8D33DC9183EDF9600866FC6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D8D33DCB183EDFA200866FC6 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		D8D33DCC183EDFA200866FC6 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		D8D33DD1183EED1800866FC6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D8D33DD3183EEE0B00866FC6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D8D90302183AE9D4005A6562 /* WingmanAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WingmanAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D90305183AE9D4005A6562 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8D90307183AE9D4005A6562 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D8D90309183AE9D4005A6562 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -69,9 +85,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D33DD4183EEE0B00866FC6 /* SystemConfiguration.framework in Frameworks */,
+				D8D33DD2183EED1800866FC6 /* libz.dylib in Frameworks */,
 				D8D90308183AE9D4005A6562 /* CoreGraphics.framework in Frameworks */,
 				D8D9030A183AE9D4005A6562 /* UIKit.framework in Frameworks */,
 				D8D90306183AE9D4005A6562 /* Foundation.framework in Frameworks */,
+				87B3242F0960412A8E1827AF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +107,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8D33DCE183EDFD300866FC6 /* SignUpFlow */ = {
+			isa = PBXGroup;
+			children = (
+				D8D33DC5183EDF8400866FC6 /* BirthdayViewController.h */,
+				D8D33DC6183EDF8400866FC6 /* BirthdayViewController.m */,
+				D8D33DCB183EDFA200866FC6 /* SignUpViewController.h */,
+				D8D33DCC183EDFA200866FC6 /* SignUpViewController.m */,
+				D8D9033A183B078D005A6562 /* JoinUsViewController.h */,
+				D8D9033B183B078D005A6562 /* JoinUsViewController.m */,
+			);
+			name = SignUpFlow;
+			sourceTree = "<group>";
+		};
+		D8D33DCF183EDFEC00866FC6 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				D8D33DC8183EDF9600866FC6 /* LoginViewController.h */,
+				D8D33DC9183EDF9600866FC6 /* LoginViewController.m */,
+			);
+			name = LoginFlow;
+			sourceTree = "<group>";
+		};
+		D8D33DD0183EE02A00866FC6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D8D33DC2183E8DEE00866FC6 /* DeactivateViewController.h */,
+				D8D33DC3183E8DEE00866FC6 /* DeactivateViewController.m */,
+				D8D90341183C7626005A6562 /* SafetyViewController.h */,
+				D8D90342183C7626005A6562 /* SafetyViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		D8D902F9183AE9D4005A6562 = {
 			isa = PBXGroup;
 			children = (
@@ -95,13 +147,14 @@
 				D8D9032A183AE9D4005A6562 /* SyftTests */,
 				D8D90304183AE9D4005A6562 /* Frameworks */,
 				D8D90303183AE9D4005A6562 /* Products */,
+				B963A1869B6E472E8C05BF83 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		D8D90303183AE9D4005A6562 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8D90302183AE9D4005A6562 /* Syft.app */,
+				D8D90302183AE9D4005A6562 /* WingmanAlpha.app */,
 				D8D90323183AE9D4005A6562 /* SyftTests.xctest */,
 			);
 			name = Products;
@@ -110,10 +163,13 @@
 		D8D90304183AE9D4005A6562 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8D33DD3183EEE0B00866FC6 /* SystemConfiguration.framework */,
+				D8D33DD1183EED1800866FC6 /* libz.dylib */,
 				D8D90305183AE9D4005A6562 /* Foundation.framework */,
 				D8D90307183AE9D4005A6562 /* CoreGraphics.framework */,
 				D8D90309183AE9D4005A6562 /* UIKit.framework */,
 				D8D90324183AE9D4005A6562 /* XCTest.framework */,
+				A5B66AC1FE1F4B98B3A7FDE9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,15 +177,12 @@
 		D8D9030B183AE9D4005A6562 /* Syft */ = {
 			isa = PBXGroup;
 			children = (
+				D8D90317183AE9D4005A6562 /* Main.storyboard */,
 				D8D90314183AE9D4005A6562 /* WelcomeAppDelegate.h */,
 				D8D90315183AE9D4005A6562 /* WelcomeAppDelegate.m */,
-				D8D90317183AE9D4005A6562 /* Main.storyboard */,
-				D8D33DC2183E8DEE00866FC6 /* DeactivateViewController.h */,
-				D8D33DC3183E8DEE00866FC6 /* DeactivateViewController.m */,
-				D8D9033A183B078D005A6562 /* JoinUsViewController.h */,
-				D8D90341183C7626005A6562 /* SafetyViewController.h */,
-				D8D90342183C7626005A6562 /* SafetyViewController.m */,
-				D8D9033B183B078D005A6562 /* JoinUsViewController.m */,
+				D8D33DCE183EDFD300866FC6 /* SignUpFlow */,
+				D8D33DCF183EDFEC00866FC6 /* LoginFlow */,
+				D8D33DD0183EE02A00866FC6 /* Settings */,
 				D8D9031A183AE9D4005A6562 /* WelcomeViewController.h */,
 				D8D9031B183AE9D4005A6562 /* WelcomeViewController.m */,
 				D8D9031D183AE9D4005A6562 /* Images.xcassets */,
@@ -174,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8D90334183AE9D4005A6562 /* Build configuration list for PBXNativeTarget "Syft" */;
 			buildPhases = (
+				741FE76E72AE46BC970CECD5 /* Check Pods Manifest.lock */,
 				D8D902FE183AE9D4005A6562 /* Sources */,
 				D8D902FF183AE9D4005A6562 /* Frameworks */,
 				D8D90300183AE9D4005A6562 /* Resources */,
+				534289D8A94D4041BC1DE49E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,7 +239,7 @@
 			);
 			name = Syft;
 			productName = Syft;
-			productReference = D8D90302183AE9D4005A6562 /* Syft.app */;
+			productReference = D8D90302183AE9D4005A6562 /* WingmanAlpha.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D8D90322183AE9D4005A6562 /* SyftTests */ = {
@@ -215,6 +270,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Joe Newbry";
 				TargetAttributes = {
+					D8D90301183AE9D4005A6562 = {
+						DevelopmentTeam = 2RCTX396VF;
+					};
 					D8D90322183AE9D4005A6562 = {
 						TestTargetID = D8D90301183AE9D4005A6562;
 					};
@@ -260,17 +318,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		534289D8A94D4041BC1DE49E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		741FE76E72AE46BC970CECD5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D8D902FE183AE9D4005A6562 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D33DCA183EDF9600866FC6 /* LoginViewController.m in Sources */,
 				D8D33DC4183E8DEE00866FC6 /* DeactivateViewController.m in Sources */,
 				D8D9033C183B078D005A6562 /* JoinUsViewController.m in Sources */,
+				D8D33DC7183EDF8400866FC6 /* BirthdayViewController.m in Sources */,
 				D8D90312183AE9D4005A6562 /* main.m in Sources */,
 				D8D90316183AE9D4005A6562 /* WelcomeAppDelegate.m in Sources */,
 				D8D9031C183AE9D4005A6562 /* WelcomeViewController.m in Sources */,
 				D8D90343183C7626005A6562 /* SafetyViewController.m in Sources */,
+				D8D33DCD183EDFA200866FC6 /* SignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,26 +488,36 @@
 		};
 		D8D90335183AE9D4005A6562 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B963A1869B6E472E8C05BF83 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Syft/Syft-Prefix.pch";
 				INFOPLIST_FILE = "Syft/Syft-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WingmanAlpha;
+				PROVISIONING_PROFILE = "39D17D9D-1AA5-4614-9966-DD156D836F21";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		D8D90336183AE9D4005A6562 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B963A1869B6E472E8C05BF83 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Syft/Syft-Prefix.pch";
 				INFOPLIST_FILE = "Syft/Syft-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WingmanAlpha;
+				PROVISIONING_PROFILE = "1D35CE61-7FC2-48E6-871D-F01AC2AC6090";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
