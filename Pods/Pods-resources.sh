@@ -42,6 +42,13 @@ install_resource()
   esac
 }
 install_resource "Facebook-iOS-SDK/src/FBUserSettingsViewResources.bundle"
+install_resource "Lookback/lookback-0.4.12/LookBack.framework/Versions/A/Resources/GFSettings.storyboard"
+install_resource "Lookback/lookback-0.4.12/LookBack.framework/Versions/A/Resources/lookback-app-toggler-off@2x.png"
+install_resource "Lookback/lookback-0.4.12/LookBack.framework/Versions/A/Resources/lookback-app-toggler-on@2x.png"
+install_resource "Lookback/lookback-0.4.12/LookBack.framework/Versions/A/Resources/lookback-app-toggler-pressed@2x.png"
+install_resource "Lookback/lookback-0.4.12/LookBack.framework/Versions/A/Resources/lookback-logo@2x.png"
+install_resource "Lookback/lookback-0.4.12/LookBack.framework/Versions/A/Resources/lookback-start-recording@2x.png"
+install_resource "Lookback/lookback-0.4.12/LookBack.framework/Versions/A/Resources/lookback-stop-recording@2x.png"
 
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 if [[ "${ACTION}" == "install" ]]; then

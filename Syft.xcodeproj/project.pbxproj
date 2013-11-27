@@ -8,8 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		87B3242F0960412A8E1827AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B66AC1FE1F4B98B3A7FDE9 /* libPods.a */; };
+		D83EAAC21843F34C00743E08 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EAAC11843F34C00743E08 /* logout.png */; };
+		D83EAACB184525AD00743E08 /* ExplorationModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83EAACA184525AD00743E08 /* ExplorationModeViewController.m */; };
+		D83EAACD1845285E00743E08 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83EAACC1845285E00743E08 /* CoreBluetooth.framework */; };
+		D83EAAD118452E7100743E08 /* Wingman-Loading-Screen960-01.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EAACF18452E7100743E08 /* Wingman-Loading-Screen960-01.png */; };
+		D83EAAD31845413300743E08 /* Wingman-Loading-Screen-1136.ai in Resources */ = {isa = PBXBuildFile; fileRef = D83EAAD21845413300743E08 /* Wingman-Loading-Screen-1136.ai */; };
+		D83EAAD51845413D00743E08 /* Wingman-Loading-Screen-1136.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EAAD41845413D00743E08 /* Wingman-Loading-Screen-1136.png */; };
+		D83EAADB1845ADDF00743E08 /* UIColor+ColorPallete.m in Sources */ = {isa = PBXBuildFile; fileRef = D83EAADA1845ADDF00743E08 /* UIColor+ColorPallete.m */; };
+		D8454178184317EB006A4CAB /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8454177184317EB006A4CAB /* HomeScreenViewController.m */; };
+		D845417C184319B3006A4CAB /* user_add.png in Resources */ = {isa = PBXBuildFile; fileRef = D845417B184319B3006A4CAB /* user_add.png */; };
+		D845417E184319E4006A4CAB /* user_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = D845417D184319E4006A4CAB /* user_circle.png */; };
+		D845418118433043006A4CAB /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D845418018433043006A4CAB /* ChangePasswordViewController.m */; };
 		D8D33DC4183E8DEE00866FC6 /* DeactivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D33DC3183E8DEE00866FC6 /* DeactivateViewController.m */; };
-		D8D33DC7183EDF8400866FC6 /* BirthdayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D33DC6183EDF8400866FC6 /* BirthdayViewController.m */; };
 		D8D33DCA183EDF9600866FC6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D33DC9183EDF9600866FC6 /* LoginViewController.m */; };
 		D8D33DCD183EDFA200866FC6 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D33DCC183EDFA200866FC6 /* SignUpViewController.m */; };
 		D8D33DD2183EED1800866FC6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D33DD1183EED1800866FC6 /* libz.dylib */; };
@@ -45,10 +55,24 @@
 /* Begin PBXFileReference section */
 		A5B66AC1FE1F4B98B3A7FDE9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B963A1869B6E472E8C05BF83 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D83EAAC11843F34C00743E08 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		D83EAAC9184525AD00743E08 /* ExplorationModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplorationModeViewController.h; sourceTree = "<group>"; };
+		D83EAACA184525AD00743E08 /* ExplorationModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplorationModeViewController.m; sourceTree = "<group>"; };
+		D83EAACC1845285E00743E08 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D83EAACF18452E7100743E08 /* Wingman-Loading-Screen960-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Wingman-Loading-Screen960-01.png"; path = "../../../Adobe Illustrator/Wingman Assets/Wingman-Loading-Screen960-01.png"; sourceTree = "<group>"; };
+		D83EAAD21845413300743E08 /* Wingman-Loading-Screen-1136.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Wingman-Loading-Screen-1136.ai"; sourceTree = "<group>"; };
+		D83EAAD41845413D00743E08 /* Wingman-Loading-Screen-1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wingman-Loading-Screen-1136.png"; sourceTree = "<group>"; };
+		D83EAAD91845ADDF00743E08 /* UIColor+ColorPallete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorPallete.h"; sourceTree = "<group>"; };
+		D83EAADA1845ADDF00743E08 /* UIColor+ColorPallete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorPallete.m"; sourceTree = "<group>"; };
+		D8454176184317EB006A4CAB /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
+		D8454177184317EB006A4CAB /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
+		D845417B184319B3006A4CAB /* user_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_add.png; sourceTree = "<group>"; };
+		D845417D184319E4006A4CAB /* user_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_circle.png; sourceTree = "<group>"; };
+		D845417F18433043006A4CAB /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		D845418018433043006A4CAB /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		D8C822FC1842F932004CED3C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		D8D33DC2183E8DEE00866FC6 /* DeactivateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeactivateViewController.h; sourceTree = "<group>"; };
 		D8D33DC3183E8DEE00866FC6 /* DeactivateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeactivateViewController.m; sourceTree = "<group>"; };
-		D8D33DC5183EDF8400866FC6 /* BirthdayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayViewController.h; sourceTree = "<group>"; };
-		D8D33DC6183EDF8400866FC6 /* BirthdayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayViewController.m; sourceTree = "<group>"; };
 		D8D33DC8183EDF9600866FC6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D8D33DC9183EDF9600866FC6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D8D33DCB183EDFA200866FC6 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -85,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83EAACD1845285E00743E08 /* CoreBluetooth.framework in Frameworks */,
 				D8D33DD4183EEE0B00866FC6 /* SystemConfiguration.framework in Frameworks */,
 				D8D33DD2183EED1800866FC6 /* libz.dylib in Frameworks */,
 				D8D90308183AE9D4005A6562 /* CoreGraphics.framework in Frameworks */,
@@ -107,15 +132,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8454179184317F1006A4CAB /* WingmanApp */ = {
+			isa = PBXGroup;
+			children = (
+				D8454176184317EB006A4CAB /* HomeScreenViewController.h */,
+				D8454177184317EB006A4CAB /* HomeScreenViewController.m */,
+				D83EAAC9184525AD00743E08 /* ExplorationModeViewController.h */,
+				D83EAACA184525AD00743E08 /* ExplorationModeViewController.m */,
+			);
+			name = WingmanApp;
+			sourceTree = "<group>";
+		};
+		D845417A184319A1006A4CAB /* ArtAssests */ = {
+			isa = PBXGroup;
+			children = (
+				D83EAAD41845413D00743E08 /* Wingman-Loading-Screen-1136.png */,
+				D83EAAD21845413300743E08 /* Wingman-Loading-Screen-1136.ai */,
+				D83EAACF18452E7100743E08 /* Wingman-Loading-Screen960-01.png */,
+				D83EAAC11843F34C00743E08 /* logout.png */,
+				D845417D184319E4006A4CAB /* user_circle.png */,
+				D845417B184319B3006A4CAB /* user_add.png */,
+			);
+			name = ArtAssests;
+			sourceTree = "<group>";
+		};
 		D8D33DCE183EDFD300866FC6 /* SignUpFlow */ = {
 			isa = PBXGroup;
 			children = (
-				D8D33DC5183EDF8400866FC6 /* BirthdayViewController.h */,
-				D8D33DC6183EDF8400866FC6 /* BirthdayViewController.m */,
-				D8D33DCB183EDFA200866FC6 /* SignUpViewController.h */,
-				D8D33DCC183EDFA200866FC6 /* SignUpViewController.m */,
 				D8D9033A183B078D005A6562 /* JoinUsViewController.h */,
 				D8D9033B183B078D005A6562 /* JoinUsViewController.m */,
+				D8D33DCB183EDFA200866FC6 /* SignUpViewController.h */,
+				D8D33DCC183EDFA200866FC6 /* SignUpViewController.m */,
 			);
 			name = SignUpFlow;
 			sourceTree = "<group>";
@@ -132,6 +179,8 @@
 		D8D33DD0183EE02A00866FC6 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				D845417F18433043006A4CAB /* ChangePasswordViewController.h */,
+				D845418018433043006A4CAB /* ChangePasswordViewController.m */,
 				D8D33DC2183E8DEE00866FC6 /* DeactivateViewController.h */,
 				D8D33DC3183E8DEE00866FC6 /* DeactivateViewController.m */,
 				D8D90341183C7626005A6562 /* SafetyViewController.h */,
@@ -163,6 +212,7 @@
 		D8D90304183AE9D4005A6562 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D83EAACC1845285E00743E08 /* CoreBluetooth.framework */,
 				D8D33DD3183EEE0B00866FC6 /* SystemConfiguration.framework */,
 				D8D33DD1183EED1800866FC6 /* libz.dylib */,
 				D8D90305183AE9D4005A6562 /* Foundation.framework */,
@@ -180,6 +230,8 @@
 				D8D90317183AE9D4005A6562 /* Main.storyboard */,
 				D8D90314183AE9D4005A6562 /* WelcomeAppDelegate.h */,
 				D8D90315183AE9D4005A6562 /* WelcomeAppDelegate.m */,
+				D845417A184319A1006A4CAB /* ArtAssests */,
+				D8454179184317F1006A4CAB /* WingmanApp */,
 				D8D33DCE183EDFD300866FC6 /* SignUpFlow */,
 				D8D33DCF183EDFEC00866FC6 /* LoginFlow */,
 				D8D33DD0183EE02A00866FC6 /* Settings */,
@@ -194,6 +246,9 @@
 		D8D9030C183AE9D4005A6562 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D83EAAD91845ADDF00743E08 /* UIColor+ColorPallete.h */,
+				D83EAADA1845ADDF00743E08 /* UIColor+ColorPallete.m */,
+				D8C822FC1842F932004CED3C /* Constants.h */,
 				D8D9030D183AE9D4005A6562 /* Syft-Info.plist */,
 				D8D9030E183AE9D4005A6562 /* InfoPlist.strings */,
 				D8D90311183AE9D4005A6562 /* main.m */,
@@ -303,8 +358,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8D9031E183AE9D4005A6562 /* Images.xcassets in Resources */,
+				D845417E184319E4006A4CAB /* user_circle.png in Resources */,
+				D83EAAD118452E7100743E08 /* Wingman-Loading-Screen960-01.png in Resources */,
 				D8D90310183AE9D4005A6562 /* InfoPlist.strings in Resources */,
+				D845417C184319B3006A4CAB /* user_add.png in Resources */,
 				D8D90319183AE9D4005A6562 /* Main.storyboard in Resources */,
+				D83EAAD51845413D00743E08 /* Wingman-Loading-Screen-1136.png in Resources */,
+				D83EAAC21843F34C00743E08 /* logout.png in Resources */,
+				D83EAAD31845413300743E08 /* Wingman-Loading-Screen-1136.ai in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,14 +417,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8454178184317EB006A4CAB /* HomeScreenViewController.m in Sources */,
 				D8D33DCA183EDF9600866FC6 /* LoginViewController.m in Sources */,
 				D8D33DC4183E8DEE00866FC6 /* DeactivateViewController.m in Sources */,
+				D845418118433043006A4CAB /* ChangePasswordViewController.m in Sources */,
 				D8D9033C183B078D005A6562 /* JoinUsViewController.m in Sources */,
-				D8D33DC7183EDF8400866FC6 /* BirthdayViewController.m in Sources */,
 				D8D90312183AE9D4005A6562 /* main.m in Sources */,
 				D8D90316183AE9D4005A6562 /* WelcomeAppDelegate.m in Sources */,
+				D83EAADB1845ADDF00743E08 /* UIColor+ColorPallete.m in Sources */,
 				D8D9031C183AE9D4005A6562 /* WelcomeViewController.m in Sources */,
 				D8D90343183C7626005A6562 /* SafetyViewController.m in Sources */,
+				D83EAACB184525AD00743E08 /* ExplorationModeViewController.m in Sources */,
 				D8D33DCD183EDFA200866FC6 /* SignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,8 +555,6 @@
 			baseConfigurationReference = B963A1869B6E472E8C05BF83 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -509,8 +571,6 @@
 			baseConfigurationReference = B963A1869B6E472E8C05BF83 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

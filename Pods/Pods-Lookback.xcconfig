@@ -1,0 +1,2 @@
+PODS_LOOKBACK_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Lookback/lookback-0.4.12"
+PODS_LOOKBACK_OTHER_LDFLAGS = -framework AVFoundation -framework AudioToolbox -framework CoreMedia -framework CoreVideo -framework LookBack -framework MediaPlayer -framework QuartzCore -framework SystemConfiguration

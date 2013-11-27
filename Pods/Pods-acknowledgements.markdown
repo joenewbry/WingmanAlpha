@@ -229,6 +229,13 @@ THE SOFTWARE.
    limitations under the License.
 
 
+## Lookback
+
+All text and design is copyright © 2013 Lookback AB
+
+All rights reserved. Terms of use as defined at http://lookback.io applies.
+
+
 ## MagicalRecord
 
  Copyright (c) 2010, Magical Panda Software, LLC

@@ -18,6 +18,7 @@ PODS:
   - AFNetworking/UIKit (2.0.3):
     - AFNetworking/NSURLConnection
   - Facebook-iOS-SDK (3.10.0)
+  - Lookback (0.4.12)
   - MagicalRecord (2.2)
   - Parse-iOS-SDK (1.2.16):
     - Facebook-iOS-SDK (~> 3.7)
@@ -25,6 +26,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Lookback
   - MagicalRecord
   - Parse-iOS-SDK
   - TestFlightSDK (~> 2.0.2)
@@ -32,6 +34,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
   Facebook-iOS-SDK: ef402579aeb30cf0c4a6370fb0a927e3dc3059e5
+  Lookback: e08fc691fb4526b413fffe39fe663391ff57c0ac
   MagicalRecord: b1fc46c99a9749fe7fe7e6f43a89b62ef5201933
   Parse-iOS-SDK: 604907fddc0e299a1b9d79c1c04377d34662dfcd
   TestFlightSDK: 0811097c1f831afb71f68ccd07ae71325cb90f43

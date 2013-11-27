@@ -1,6 +1,6 @@
-FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Parse-iOS-SDK"
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Lookback/lookback-0.4.12" "$(PODS_ROOT)/Parse-iOS-SDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/Facebook-iOS-SDK" "${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK" "${PODS_ROOT}/Headers/MagicalRecord" "${PODS_ROOT}/Headers/Parse-iOS-SDK" "${PODS_ROOT}/Headers/TestFlightSDK"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/Facebook-iOS-SDK" "${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK" "${PODS_ROOT}/Headers/Lookback" "${PODS_ROOT}/Headers/MagicalRecord" "${PODS_ROOT}/Headers/Parse-iOS-SDK" "${PODS_ROOT}/Headers/TestFlightSDK"
 LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/TestFlightSDK"
-OTHER_LDFLAGS = -ObjC -lTestFlight -lsqlite3 -lz -framework AudioToolbox -framework CFNetwork -framework CoreData -framework CoreGraphics -framework CoreLocation -framework MobileCoreServices -framework Parse -framework QuartzCore -framework Security -framework StoreKit -framework SystemConfiguration -framework UIKit -weak_framework Accounts -weak_framework AdSupport -weak_framework Security -weak_framework Social
+OTHER_LDFLAGS = -ObjC -lTestFlight -lsqlite3 -lz -framework AVFoundation -framework AudioToolbox -framework CFNetwork -framework CoreData -framework CoreGraphics -framework CoreLocation -framework CoreMedia -framework CoreVideo -framework LookBack -framework MediaPlayer -framework MobileCoreServices -framework Parse -framework QuartzCore -framework Security -framework StoreKit -framework SystemConfiguration -framework UIKit -weak_framework Accounts -weak_framework AdSupport -weak_framework Security -weak_framework Social
 PODS_ROOT = ${SRCROOT}/Pods

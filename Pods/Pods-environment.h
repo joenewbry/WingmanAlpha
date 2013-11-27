@@ -54,6 +54,12 @@
 #define COCOAPODS_VERSION_MINOR_Facebook_iOS_SDK 10
 #define COCOAPODS_VERSION_PATCH_Facebook_iOS_SDK 0
 
+// Lookback
+#define COCOAPODS_POD_AVAILABLE_Lookback
+#define COCOAPODS_VERSION_MAJOR_Lookback 0
+#define COCOAPODS_VERSION_MINOR_Lookback 4
+#define COCOAPODS_VERSION_PATCH_Lookback 12
+
 // MagicalRecord
 #define COCOAPODS_POD_AVAILABLE_MagicalRecord
 #define COCOAPODS_VERSION_MAJOR_MagicalRecord 2

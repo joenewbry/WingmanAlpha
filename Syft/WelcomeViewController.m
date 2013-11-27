@@ -7,6 +7,7 @@
 //
 
 #import "WelcomeViewController.h"
+#import <Parse/Parse.h>
 
 @interface WelcomeViewController ()
 
@@ -24,6 +25,9 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)singInButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"toLoginScreen" sender:self];
 }
 
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SignUpViewController : UIViewController
+@interface SignUpViewController : UIViewController <UITextFieldDelegate>
+
+- (void)passUserObject:(NSMutableDictionary *)data;
 
 @end

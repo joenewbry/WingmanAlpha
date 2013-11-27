@@ -7,10 +7,11 @@
 //
 
 #import "DeactivateViewController.h"
-
+#import <Parse/Parse.h>
+#import <TestFlight.h>
 
 @interface DeactivateViewController ()
-@property (strong, nonatomic) IBOutlet UIPickerView *reasonForLeavingPicker;
+@property (strong, nonatomic) IBOutlet UIPickerView *reasonForLeaving;
 @property (strong, nonatomic)          NSArray *optionsForLeavingArray;
 @property(strong, nonatomic)           NSString *selectedReason;
 
@@ -31,7 +32,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.optionsForLeavingArray = [[NSArray alloc] initWithObjects:@"I met someone here!", @"I met someone elsewhere", @"Not enough people", @"Too many messages", @"Harassing messages", @"Too dificult to use", @"Breaks too much", @"Doesn't have my type"];
+    self.optionsForLeavingArray = @[@"I met someone here!", @"I met someone elsewhere", @"Not enough people", @"Too many messages", @"Harassing messages", @"Too dificult to use", @"Breaks too much", @"Doesn't have my type"];
+    self.reasonForLeaving.delegate = self;
+    [self.reasonForLeaving reloadAllComponents];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,28 +44,38 @@
 }
 
 - (IBAction)deleteAccountPressed:(id)sender {
-    //[PFUser ]
+    [[PFUser currentUser] deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error){
+
+    }];
+
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    return (NSInteger)1;
+    return 1;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent: (NSInteger)component;
 {
-    return self.optionsForLeavingArray.count;
+    return [self.optionsForLeavingArray count];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [self.optionsForLeavingArray objectAtIndex:row];
+    if ([self.optionsForLeavingArray objectAtIndex:row]){
+        return [self.optionsForLeavingArray objectAtIndex:row];
+    }
+    return @"No data";
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     self.selectedReason = [self.optionsForLeavingArray objectAtIndex:row];
-    NSLog(@"reason is that %@", self.selectedReason);
+    [TestFlight submitFeedback:[self.optionsForLeavingArray objectAtIndex:row]];
+    self.optionsForLeavingArray = @[@"Response Submitted"];
+    [self.reasonForLeaving reloadAllComponents];
 }
+
+
 
 @end

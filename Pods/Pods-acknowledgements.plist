@@ -250,6 +250,17 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>All text and design is copyright © 2013 Lookback AB
+
+All rights reserved. Terms of use as defined at http://lookback.io applies.
+</string>
+			<key>Title</key>
+			<string>Lookback</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string> Copyright (c) 2010, Magical Panda Software, LLC
 
  Permission is hereby granted, free of charge, to any person
